@@ -1,4 +1,9 @@
+/* sidebar */
+
+
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+
+
 
 * {
   margin: 0;
@@ -7,7 +12,7 @@
   font-family: "Poppins", sans-serif;
   --color-hover: rgba(32, 59, 232);
   --transition: all 0.2s ease;
-}
+} 
 
 .sidebar {
   position: fixed;
@@ -239,7 +244,7 @@
   left: 3px;
 }
 
-.home {
+ .home {
   position: relative;
   top: 0;
   left: 78px;
@@ -248,19 +253,398 @@
   background: #e2e2e2;
   z-index: 6;
   transition: var(--transition);
-}
+  font-size: 20px;
+  font-weight: 500;
+  color: #000;
+  margin: 20px;
+} 
 
 .sidebar.expand ~ .home {
   left: 250px;
   width: calc(100% - 250px);
   transition: var(--transition);
 }
+ 
 
-.home p {
-  font-size: 20px;
+
+.avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-top: 10px;
+  margin-left: 10px;
+  float: left;
+  margin-right: 10px;
+
+}
+
+@media screen and (min-width:700px){ 
+  .avatar {
+    width: 85px;
+    height: 85px;
+    border-radius: 50%;
+    margin-top: 10px;
+    margin-left: 10px;
+    float: left;
+    margin-right: 10px;
+  
+  }
+  
+}
+
+
+
+@media screen and (min-width:1024px){ 
+  .avatar {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin-top: 10px;
+    margin-left: 10px;
+    float: left;
+    margin-right: 10px;
+  
+  }
+  }
+
+  h3 {
+    padding-top: 10px;
+    font-size: 1rem;
+
+    }
+    
+
+
+  @media screen and (min-width:700px){ 
+    h3 {
+      padding-top: 20px;
+      padding-bottom: 10px;
+      font-size: 1rem;
+
+
+      }
+      
+  }
+
+  @media screen and (min-width:1024px){ 
+    h3 {
+      padding-top: 20px;
+      padding-bottom: 10px;
+      font-size: 1rem;
+
+      }
+
+    }
+
+
+/* typography */
+body {
+  font-size: 1rem;
+  
+}
+
+p {
+  font-size: 10px;
   font-weight: 500;
   color: #000;
-  display: inline-block;
-  margin: 20px;
-  white-space: nowrap;
+  margin-bottom: 50px;
 }
+
+@media screen and (min-width:700px){ 
+  p {
+    font-size: 17px;
+    font-weight: 500;
+    color: #000;
+  }
+  
+}
+
+@media screen and (min-width:1024px){ 
+  p {
+    font-size: 22px;
+    font-weight: 500;
+    color: #000;
+  }
+
+}
+
+
+
+.social {
+    margin: 20px;
+  }
+
+ 
+
+h5 {
+  margin-left: 20px;
+  border-top: 2px solid black;
+  margin-left: 20px;
+  margin-right: 20px;
+  padding-top: 10px;
+  color: rgb(230, 123, 35);
+
+}
+
+.welcome-text {
+  font-size: 1rem;
+  margin-left: 20px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  
+
+}
+
+
+.social_image {
+  width: 30px;
+  height: 30px;
+  
+  
+}
+
+.contact  {
+  display: inline-flex;
+  background-color: #bbb1b1;
+  height: 2%;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  text-align: center;
+  padding-left: 5px;
+  padding-right: 10px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+}
+
+@media screen and (min-width:768px){ 
+  .card {
+    display: flex;
+    flex-direction: row;
+    margin: 10px;
+  }
+}
+
+
+@media screen and (min-width:1024px){ 
+  .card {
+    display: flex;
+    flex-direction: row;
+    margin: 10px;
+  }
+}
+
+
+
+
+.card__body {
+  border-radius: 10px;
+  width: 95%;
+  height: 15vh;
+  margin: 2%;
+}
+
+@media screen and (min-width:768px){ 
+  .card__body {
+    border-radius: 10px;
+    width: 95%;
+    height: 15vh;
+    margin: 2%;
+  }
+
+}
+
+@media screen and (min-width:1024px){ 
+  .card__body {
+    border-radius: 10px;
+    width: 95%;
+    height: 15vh;
+    margin: 2%;
+  }
+
+  }
+
+.card__header {
+  width: 95%;
+  height: 21vh;
+  background-color: #9E9E9E; 
+  margin: 10px;
+  border-radius: 10px;
+  box-shadow: whitesmoke;
+}
+
+@media screen and (min-width:768px){ 
+
+  .card__header {
+    width: 95%;
+    height: 20vh;
+    background-color: #9E9E9E;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: whitesmoke;
+  }
+
+} 
+
+@media screen and (min-width:1024px){ 
+  .card__header {
+    width: 25%;
+    height: 25vh;
+    background-color: #9E9E9E;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: whitesmoke;
+  }
+  
+}
+
+.card__text {
+  width: 1rem;
+}
+
+
+.project__image {
+  width: 100%;
+  height: 15vh;
+  border-radius: 10px;
+  object-fit: cover;
+
+}
+
+.arrow__image{
+  width: 30px;
+  height: 30px;
+ 
+}
+@media screen and (min-width:768px){ 
+  .arrow__image{
+    width: 30px;
+    height: 30px;
+   
+  }
+}
+@media screen and (min-width:1024px){ 
+  .arrow__image{
+    width: 30px;
+    height: 30px;
+  
+
+  }
+  
+
+}
+
+
+.card__arrow {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+
+@media screen and (min-width:768px){ 
+  .card__arrow {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+  @media screen and (min-width:1024px){ 
+    .card__arrow {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  }
+
+
+
+
+ 
+/* Footer  */
+.footer {
+  background: #232323;
+}
+
+.footer a {
+  color: #777;
+  transition: color 0.3s;
+}
+
+.footer a:hover {
+  color: #fff;
+}
+/*
+.footer__section {
+  padding: 2rem;
+  border-bottom: 1px solid #393939;
+}
+
+.footer__section .list {
+  margin: 0;
+}
+
+.footer__heading {
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.footer__brand {
+  margin-top: 5rem;
+  text-align: center;
+}
+
+.footer__brand img {
+  /* TODO: Consider refactoring this and applying it to 
+  all images. 
+  width: 100%;
+  max-width: 230px;
+}
+
+.footer__copyright {
+  font-size: 2.1rem;
+  color: #fff;
+  opacity: 0.3;
+}
+
+@media screen and (min-width: 768px) {
+  .footer {
+    font-size: 1.5rem;
+  }
+  .footer__sections {
+    grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+  }
+
+  .footer .collapsible__chevron {
+    display: none;
+  }
+
+  .footer .collapsible__content {
+    opacity: 1;
+    max-height: 100%;
+  }
+
+  .footer__brand {
+    order: -1;
+    margin-top: 1rem;
+  }
+
+  .footer__copyright {
+    font-size: 1.5rem;
+  }
+
+  .footer__section {
+    border: 0;
+  }
+
+  .footer__heading {
+    font-size: 1.6rem;
+  }
+} */
