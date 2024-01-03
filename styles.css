@@ -581,6 +581,11 @@ a {
 .footer a:hover {
   color: #fff;
 }
+
+
+.contact__page {
+  background-color: black;
+}
 /*
 .footer__section {
   padding: 2rem;
